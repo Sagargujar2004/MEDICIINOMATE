@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicino Mate - Pills Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><span class="medicino">Medicino</span><span class="mate"> Mate</span></h1>
+            <h2>PILLS TRACKER</h2>
+        </div>
+        <div class="tracker">
+            <form id="pillTrackerForm">
+                <label>Have you taken your afternoon pills?</label><br>
+                <input type="radio" id="afternoonYes" name="afternoonPills" value="yes">
+                <label for="afternoonYes">YES</label>
+                <input type="radio" id="afternoonNo" name="afternoonPills" value="no">
+                <label for="afternoonNo">NO</label><br><br>
+
+                <label>Have you taken your night pills?</label><br>
+                <input type="radio" id="nightYes" name="nightPills" value="yes">
+                <label for="nightYes">YES</label>
+                <input type="radio" id="nightNo" name="nightPills" value="no">
+                <label for="nightNo">NO</label><br><br>
+
+                <button type="button" onclick="updateStatus()">UPDATE</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
